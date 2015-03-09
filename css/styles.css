@@ -1,0 +1,12 @@
+.top-bar li {
+  padding: 0 20px;
+}
+
+.top-bar strong {
+  color: #FFF;
+  padding-left: 15px;
+}
+
+ul .li-indented {
+  padding-left: 25px;
+}

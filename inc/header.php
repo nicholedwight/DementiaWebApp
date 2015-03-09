@@ -21,6 +21,8 @@
       <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="left">
+          <li><a href="index.php">Home</a></li>
+          <hr>
           <li><a href="#">Worried about your memory?</a></li>
           <li class="has-dropdown">
             <a href="#">Benefits and Legal</a>
@@ -54,6 +56,7 @@
               <li><a href="#">Specialist Health Physicians</a></li>
             </ul>
           </li>
+          <hr>
           <li><strong>Keep in touch</strong></li>
           <li class="li-indented"><a href="#">Contact Us</a></li>
           <li class="li-indented"><a href="#">Helpline</a></li>

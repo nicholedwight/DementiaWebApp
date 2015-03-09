@@ -1,5 +1,9 @@
+
+
 .top-bar .name {
   text-align: center;
+  width: 175px;
+  margin: 0 auto;
 }
 
 .top-bar .name h1 a {
@@ -10,15 +14,66 @@ ul li.toggle-topbar {
   padding: 0;
 }
 
+.top-bar-section ul {
+  background: #333333;
+}
+
 .top-bar li {
   padding: 0 20px;
 }
 
+.top-bar-section ul li > a {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
 .top-bar strong {
-  color: #FFF;
+  color: #CCC;
   padding-left: 15px;
 }
 
 ul .li-indented {
   padding-left: 25px;
+}
+
+hr {
+  border-color: #444444;
+margin: 5px 0 10px 0 !important;
+border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+  -webkit-backface-visibility: hidden;
+}
+
+.category-wrapper {
+  max-width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.category img {
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.category {
+  max-width: 300px;
+}
+
+.category h4 {
+  background: #333;
+  color: #FFF;
+  height: 60px;
+  line-height: 60px;
+  width: 300px;
+  padding-top: 5px;
+  margin: 0 auto;
+}
+
+.category p {
+  text-align: left;
+  word-wrap: break-word;
 }

@@ -10,8 +10,8 @@
       index : 0,
       sticky_class : 'sticky',
       custom_back_text : true,
-      back_text : 'Back',
-      mobile_show_parent_link : true,
+      back_text : 'Backitty',
+      mobile_show_parent_link : false,
       is_hover : true,
       scrolltop : true, // jump to top when sticky nav menu toggle is clicked
       sticky_on : 'all'
@@ -65,7 +65,7 @@
       var smallMatch = matchMedia(Foundation.media_queries.small).matches;
       var medMatch   = matchMedia(Foundation.media_queries.medium).matches;
       var lrgMatch   = matchMedia(Foundation.media_queries.large).matches;
-      
+
        if (sticky && settings.sticky_on === 'all') {
           return true;
        }

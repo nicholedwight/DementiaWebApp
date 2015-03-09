@@ -77,3 +77,16 @@ border-width: 1px 0 0;
   text-align: left;
   word-wrap: break-word;
 }
+
+.footer-nav {
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer-nav li {
+  display: inline;
+  width: 300px;
+}

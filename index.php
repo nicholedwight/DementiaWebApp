@@ -3,9 +3,9 @@
     <div class="banner">
       <img src="http://placekitten.com/g/500/200">
     </div>
-    <h1>Categories</h1>
 
-    <div class="category-wrapper">
+    <div class="category-wrapper" id="content">
+      <h1>Categories</h1>
       <div class="category">
         <a href="#">
           <img src="http://placekitten.com/g/300/200">

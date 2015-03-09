@@ -1,3 +1,15 @@
+.top-bar .name {
+  text-align: center;
+}
+
+.top-bar .name h1 a {
+  width: 100%;
+}
+
+ul li.toggle-topbar {
+  padding: 0;
+}
+
 .top-bar li {
   padding: 0 20px;
 }

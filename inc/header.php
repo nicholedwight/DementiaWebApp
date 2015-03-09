@@ -20,7 +20,7 @@
 
       <section class="top-bar-section">
         <!-- Right Nav Section -->
-        <ul class="right">
+        <ul class="left">
           <li><a href="#">Worried about your memory?</a></li>
           <li class="has-dropdown">
             <a href="#">Benefits and Legal</a>

@@ -3,26 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DementiaWeb</title>
-    <link rel="stylesheet" href="css/foundation.css" />
+    <title>Dementia Web</title>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
     <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
+      <ul>
         <li class="toggle-topbar menu-icon">
           <a href="#content"><span>Menu</span></a>
         </li>
         <li class="name">
-          <h1><a href="index.php">DementiaWeb</a></h1>
+          <h1><a href="index.php">Dementia Web</a></h1>
         </li>
-
+        <li>
+          <a href="#">Search</a>
+        </li>
       </ul>
 
       <section class="top-bar-section">
         <!-- Right Nav Section -->
-        <ul class="left">
+        <ul>
           <li><a href="index.php">Home</a></li>
           <hr>
           <li><a href="#">Worried about your memory?</a></li>

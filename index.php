@@ -55,8 +55,13 @@
           </p>
         </a>
       </div>
-    </div>
 
+      <form role="search" method="get" id="searchform" action="#">
+        <input type="text" name="s" class="emptyfocus" placeholder="Search everything" onfocus="if(this.value == 'value') { this.value = ''; }">
+        <button type="submit"><span>Search</span></button>
+        <a href="#">Advanced Search →</a>
+      </form>
+    </div>
 
   </div>
 <?php include('inc/footer.php');?>

@@ -24,6 +24,10 @@ header {
   height: 50px;
 }
 
+nav a {
+  display: block;
+}
+
 .collapsed {
   display: none;
 }
@@ -102,6 +106,34 @@ header {
 
 .current {
   text-decoration: underline;
+}
+
+span.touch-btn {
+  float: right;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  width: 20px;
+  height: 20px;
+  margin: -6px 0 0 0;
+  padding: 2px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: url(../img/plus-minus.gif) no-repeat 50% 2px #666;
+  transform-origin: 50% 50%;
+  transform: rotate(180deg);
+  background-position: 50% -18px;
+}
+
+span.touch-btn.active {
+  background-position: 50% 2px;
+  transform-origin: 50% 50%;
+  transform: rotate(0deg);
 }
 
 li {

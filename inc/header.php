@@ -21,7 +21,10 @@
       		    <li class="active"><a href="index.php">Home</a></li>
               <li><a href="#">Worried about your memory?</a></li>
               <li>
-                <a href="#" class="has-dropdown">Benefits and Legal</a>
+                <a href="#" class="has-dropdown">
+                  Benefits and Legal
+                  <span class="touch-btn active">▼</span>
+                </a>
                 <ul class="dropdown collapsed">
                   <li><a href="#">Benefits</a></li>
                   <li><a href="#">Power of Attorney</a></li>
@@ -29,7 +32,10 @@
                 </ul>
               </li>
               <li>
-                <a href="#" class="has-dropdown">Staying Active</a>
+                <a href="#" class="has-dropdown">
+                  Staying Active
+                  <span class="touch-btn active">▼</span>
+                </a>
                 <ul class="dropdown collapsed">
                   <li><a href="#">Group Forum</a></li>
                   <li><a href="#">Support Groups</a></li>
@@ -39,14 +45,20 @@
                 </ul>
               </li>
               <li>
-                <a href="#" class="has-dropdown">Carer Health</a>
+                <a href="#" class="has-dropdown">
+                  Carer Health
+                  <span class="touch-btn active">▼</span>
+                </a>
                 <ul class="dropdown collapsed">
                   <li><a href="#">Carer's Support Groups</a></li>
                   <li><a href="#">Carer Training</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="has-dropdown">Your Health</a>
+                <a href="#" class="has-dropdown">
+                  Your Health
+                  <span class="touch-btn active">▼</span>
+                </a>
                 <ul class="dropdown collapsed">
                   <li><a href="#">What to Expect</a></li>
                   <li><a href="#">Specialist Health Physicians</a></li>

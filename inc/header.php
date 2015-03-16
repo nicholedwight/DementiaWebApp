@@ -11,8 +11,11 @@
   <body>
     <nav class="top-bar" data-topbar role="navigation">
       <ul>
-        <li class="toggle-topbar menu-icon">
-          <a href="#content"><span>Menu</span></a>
+        <li class="toggle-topbar">
+          <a href="#" id="nav-toggle">
+            <span></span>
+            <div class="menu-toggle">Menu</div>
+          </a>
         </li>
         <li class="name">
           <h1><a href="index.php">Dementia Web</a></h1>

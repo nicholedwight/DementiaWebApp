@@ -3,6 +3,7 @@ body, html {
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
+  position: relative;
 }
 
 a {
@@ -10,10 +11,82 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+}
+
 .top-bar {
-  margin-top: -16px;
   text-decoration: none;
   background: #333333;
+}
+
+.top-bar li {
+  width: 14%;
+}
+
+.menu-toggle {
+  margin-left: 35px;
+}
+
+.toggle-topbar {
+  width: 45px;
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 3%;
+  top: 0.3%;
+}
+
+#nav-toggle {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 30px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+#nav-toggle span:before {
+  top: -7px;
+}
+
+#nav-toggle span:after {
+  top: 7px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+
+#nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+  transform: translateY(-10px) rotate(-45deg);
+  top: 10px;
+}
+
+.top-bar h1 {
+  font-size: 18px;
 }
 
 .top-bar li a {

@@ -1,7 +1,7 @@
 body, html {
   max-width: 450px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 0;
   position: relative;
 }
@@ -13,32 +13,36 @@ a {
 
 ul {
   margin: 0;
+  list-style: none;
 }
 
-.top-bar {
+header {
   text-decoration: none;
   background: #333333;
+  color: #FFF;
+  height: 50px;
 }
 
-.top-bar li {
-  width: 14%;
-}
-
-.menu-toggle {
-  margin-left: 35px;
+.collapsed {
+  display: none;
 }
 
 .toggle-topbar {
   width: 45px;
 }
 
+.navbar-header {
+  padding-top: 15px;
+  text-align: center;
+  height: 20px;
+}
+
 #nav-toggle {
   position: absolute;
   left: 3%;
   top: 0.3%;
-}
-
-#nav-toggle {
+  background-color: transparent;
+  border-color: transparent;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
 }
@@ -85,6 +89,20 @@ ul {
   top: 10px;
 }
 
+.navbar-brand {
+  margin: 0 auto;
+}
+
+.navbar-collapsible {
+  background: #333;
+  width: 100%;
+  position: absolute;
+}
+
+/* Fallbacks */
+.click-nav .no-js ul {display:none;}
+.click-nav .no-js:hover ul {display:block;}
+
 .top-bar h1 {
   font-size: 18px;
 }
@@ -97,6 +115,11 @@ ul {
   display: inline-block;
 }
 
+.menu {
+  display: block;
+  width: 250px;
+}
+
 .top-bar .name {
   text-align: center;
   width: 200px;
@@ -104,7 +127,7 @@ ul {
 }
 
 .top-bar-section {
-  display: none;
+  /*display: none;*/
 }
 
 .top-bar .name h1 a {

@@ -20,16 +20,16 @@
           <ul class="nav navbar-nav">
       		    <li class="active"><a href="index.php">Home</a></li>
               <li><a href="#">Worried about your memory?</a></li>
-              <li class="has-dropdown">
-                <a href="#">Benefits and Legal</a>
+              <li>
+                <a href="#" class="has-dropdown">Benefits and Legal</a>
                 <ul class="dropdown collapsed">
                   <li><a href="#">Benefits</a></li>
                   <li><a href="#">Power of Attorney</a></li>
                   <li><a href="#">Local Council</a></li>
                 </ul>
               </li>
-              <li class="has-dropdown">
-                <a href="#">Staying Active</a>
+              <li>
+                <a href="#" class="has-dropdown">Staying Active</a>
                 <ul class="dropdown collapsed">
                   <li><a href="#">Group Forum</a></li>
                   <li><a href="#">Support Groups</a></li>
@@ -38,15 +38,15 @@
                   <li><a href="#">In the Home</a></li>
                 </ul>
               </li>
-              <li class="has-dropdown">
-                <a href="#">Carer Health</a>
+              <li>
+                <a href="#" class="has-dropdown">Carer Health</a>
                 <ul class="dropdown collapsed">
                   <li><a href="#">Carer's Support Groups</a></li>
                   <li><a href="#">Carer Training</a></li>
                 </ul>
               </li>
-              <li class="has-dropdown">
-                <a href="#">Your Health</a>
+              <li>
+                <a href="#" class="has-dropdown">Your Health</a>
                 <ul class="dropdown collapsed">
                   <li><a href="#">What to Expect</a></li>
                   <li><a href="#">Specialist Health Physicians</a></li>

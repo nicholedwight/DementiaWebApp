@@ -100,6 +100,14 @@ header {
   position: absolute;
 }
 
+.current {
+  text-decoration: underline;
+}
+
+li {
+  padding: 10px 0;
+}
+
 .nojs .navbar-collapsible {
   display: block;
 }

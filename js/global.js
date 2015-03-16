@@ -25,6 +25,7 @@ $(document).ready(function () {
 				    $(".navbar-collapsible").toggleClass("collapsed");
 			  });
         $(".has-dropdown").on("click", function () {
-				    $(this).find(".dropdown").toggleClass("collapsed");
+            $(this).toggleClass("current");
+				    $(this).next().toggleClass("collapsed");
 			  });
 		});

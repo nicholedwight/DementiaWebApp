@@ -103,59 +103,6 @@ header {
 .click-nav .no-js ul {display:none;}
 .click-nav .no-js:hover ul {display:block;}
 
-.top-bar h1 {
-  font-size: 18px;
-}
-
-.top-bar li a {
-  color: #FFF;
-}
-
-.top-bar ul li {
-  display: inline-block;
-}
-
-.menu {
-  display: block;
-  width: 250px;
-}
-
-.top-bar .name {
-  text-align: center;
-  width: 200px;
-  margin: 0 auto;
-}
-
-.top-bar-section {
-  /*display: none;*/
-}
-
-.top-bar .name h1 a {
-  width: 100%;
-}
-
-ul li.toggle-topbar {
-  padding: 0;
-}
-
-.top-bar-section ul {
-  background: #333333;
-}
-
-.top-bar li {
-  padding: 0 20px;
-}
-
-.top-bar-section ul li > a {
-  font-weight: 300;
-  font-size: 1.25rem;
-}
-
-.top-bar strong {
-  color: #CCC;
-  padding-left: 15px;
-}
-
 ul .li-indented {
   padding-left: 25px;
 }

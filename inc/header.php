@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
-  <body>
+  <body class="nojs">
     <header>
         <div class="navbar-header">
           <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" id="nav-toggle">

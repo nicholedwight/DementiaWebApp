@@ -18,12 +18,13 @@
 //       }
 //     });
 //   });
+$('body').removeClass('nojs').addClass('js'); //*Enables .js * CSS classes when JavaScript is disabled
 
-  $(document).ready(function () {
-  			  $(".navbar-toggle").on("click", function () {
-  				    $(".navbar-collapsible").toggleClass("collapsed");
-  			  });
-          $(".has-dropdown").on("click", function () {
-  				    $(this).find(".dropdown").toggleClass("collapsed");
-  			  });
-  		});
+$(document).ready(function () {
+			  $(".navbar-toggle").on("click", function () {
+				    $(".navbar-collapsible").toggleClass("collapsed");
+			  });
+        $(".has-dropdown").on("click", function () {
+				    $(this).find(".dropdown").toggleClass("collapsed");
+			  });
+		});

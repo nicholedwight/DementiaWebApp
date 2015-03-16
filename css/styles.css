@@ -14,6 +14,7 @@ a {
 ul {
   margin: 0;
   list-style: none;
+  padding: 0 30px;
 }
 
 header {
@@ -99,12 +100,12 @@ header {
   position: absolute;
 }
 
-/* Fallbacks */
-.click-nav .no-js ul {display:none;}
-.click-nav .no-js:hover ul {display:block;}
+.nojs .navbar-collapsible {
+  display: block;
+}
 
-ul .li-indented {
-  padding-left: 25px;
+.nojs .main {
+  margin-top: 150px;
 }
 
 hr {

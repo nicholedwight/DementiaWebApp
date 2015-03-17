@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?23485991');
+  src: url('../font/fontello.eot?23485991#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?23485991') format('woff'),
+       url('../font/fontello.ttf?23485991') format('truetype'),
+       url('../font/fontello.svg?23485991#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, html {
   max-width: 450px;
   margin: 0 auto;
@@ -14,7 +25,7 @@ a {
 ul {
   margin: 0;
   list-style: none;
-  padding: 0 30px;
+  padding: 0;
 }
 
 header {
@@ -26,10 +37,63 @@ header {
 
 nav a {
   display: block;
+  position: relative;
+  text-indent: 20px;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav li {
+  border-top: 1px solid #4f4f4f;
+}
+
+.search-btn {
+  position: absolute;
+  right: 4%;
+}
+
+.search-btn span:before {
+  font-family: 'fontello';
+  content: '\e800';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  color: #FFF;
+  speak: none;
+  padding: 0 5px;
+}
+
+.has-dropdown:before {
+  position: absolute;
+  top: 11px;
+  left: 1px;
+  font-size: 24px;
+  color: #fff;
+  content: '+'
+}
+
+.current {
+  text-decoration: underline;
+  background-color: #1a1a1a;
+}
+
+.current:before {
+  content: '\2013';
+}
+
+.js-expandable-active {
+  /*border-left: 5px solid blue;*/
 }
 
 .collapsed {
   display: none;
+}
+
+.dropdown {
+  background-color: #262626;
 }
 
 .toggle-topbar {
@@ -49,7 +113,9 @@ nav a {
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
-  padding: 10px 35px 16px 0px;
+  padding: 10px 0;
+  width: 75px;
+  text-align: right;
 }
 
 #nav-toggle span,
@@ -63,14 +129,15 @@ nav a {
   position: absolute;
   display: block;
   content: '';
+  margin-top: 5px;
 }
 
 #nav-toggle span:before {
-  top: -7px;
+  top: -12px;
 }
 
 #nav-toggle span:after {
-  top: 7px;
+  top: 2px;
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
@@ -87,11 +154,12 @@ nav a {
 
 #nav-toggle.active span:before {
   transform: rotate(45deg);
+  top: -5px;
 }
 
 #nav-toggle.active span:after {
   transform: translateY(-10px) rotate(-45deg);
-  top: 10px;
+  top: 6px;
 }
 
 .navbar-brand {
@@ -102,14 +170,11 @@ nav a {
   background: #333;
   width: 100%;
   position: absolute;
-}
-
-.current {
-  text-decoration: underline;
+  margin-top: 15px;
 }
 
 span.touch-btn {
-  float: right;
+  float: left;
   transition: all .2s ease;
   -webkit-transition: all .2s ease;
   width: 20px;
@@ -134,10 +199,6 @@ span.touch-btn.active {
   background-position: 50% 2px;
   transform-origin: 50% 50%;
   transform: rotate(0deg);
-}
-
-li {
-  padding: 10px 0;
 }
 
 .nojs .navbar-collapsible {

@@ -13,8 +13,10 @@
         <div class="navbar-header">
           <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" id="nav-toggle">
             <span></span>
+            Menu
           </a>
           <a class="navbar-brand" href="index.php">DementiaWeb</a>
+          <a href="#" class="search-btn"><span></span>Search</a>
         </div>
         <nav class="navbar-collapsible collapsed">
           <ul class="nav navbar-nav">
@@ -23,7 +25,6 @@
               <li>
                 <a href="#" class="has-dropdown">
                   Benefits and Legal
-                  <span class="touch-btn active">▼</span>
                 </a>
                 <ul class="dropdown collapsed">
                   <li><a href="#">Benefits</a></li>
@@ -34,7 +35,6 @@
               <li>
                 <a href="#" class="has-dropdown">
                   Staying Active
-                  <span class="touch-btn active">▼</span>
                 </a>
                 <ul class="dropdown collapsed">
                   <li><a href="#">Group Forum</a></li>
@@ -47,7 +47,6 @@
               <li>
                 <a href="#" class="has-dropdown">
                   Carer Health
-                  <span class="touch-btn active">▼</span>
                 </a>
                 <ul class="dropdown collapsed">
                   <li><a href="#">Carer's Support Groups</a></li>
@@ -57,15 +56,12 @@
               <li>
                 <a href="#" class="has-dropdown">
                   Your Health
-                  <span class="touch-btn active">▼</span>
                 </a>
                 <ul class="dropdown collapsed">
                   <li><a href="#">What to Expect</a></li>
                   <li><a href="#">Specialist Health Physicians</a></li>
                 </ul>
               </li>
-              <hr>
-              <li><strong>Keep in touch</strong></li>
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">Helpline</a></li>
       		</ul>

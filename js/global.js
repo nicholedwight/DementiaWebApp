@@ -10,6 +10,7 @@ $(document).ready(function () {
 				    $(".navbar-collapsible").toggleClass("collapsed");
 			  });
         $(".has-dropdown").on("click", function () {
+            $(this).parent().toggleClass("js-expandable-active");
             $(this).toggleClass("current");
             $(this).find(">:first-child").toggleClass("active");
 				    $(this).next().toggleClass("collapsed");

@@ -15,4 +15,7 @@ $(document).ready(function () {
             $(this).find(">:first-child").toggleClass("active");
 				    $(this).next().toggleClass("collapsed");
 			  });
+        $(".search-btn").on("click", function () {
+				    $(".search-container").toggleClass("collapsed");
+			  });
 		});

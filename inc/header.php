@@ -66,4 +66,11 @@
               <li><a href="#">Helpline</a></li>
       		</ul>
         </nav>
+
+        <div class="search-container collapsed">
+          <form class="nav-search" id="search-bar" aria-expanded="true">
+            <input type="search" class="nav-search-field" id="nav-search" name="nav-search" placeholder="Search everything">
+            <button type="submit"></button>
+          </form>
+        </div>
     </header>

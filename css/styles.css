@@ -154,7 +154,7 @@ nav li {
 
 #nav-toggle.active span:before {
   transform: rotate(45deg);
-  top: -5px;
+  top: -4px;
 }
 
 #nav-toggle.active span:after {
@@ -199,6 +199,16 @@ span.touch-btn.active {
   background-position: 50% 2px;
   transform-origin: 50% 50%;
   transform: rotate(0deg);
+}
+
+.search-container {
+  position: absolute;
+  top: 2%;
+  background: grey;
+  width: 100%;
+  height: 40px;
+  padding-top: 17px;
+  text-align: center;
 }
 
 .nojs .navbar-collapsible {

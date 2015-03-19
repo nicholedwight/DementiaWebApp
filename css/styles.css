@@ -10,11 +10,16 @@
 }
 
 body, html {
-  max-width: 450px;
   margin: 0 auto;
   overflow-x: hidden;
   padding: 0;
   position: relative;
+}
+
+@media (min-width: 500px) {
+  body, html {
+    max-width: 480px;
+  }
 }
 
 a {
@@ -30,7 +35,7 @@ ul {
 
 header {
   text-decoration: none;
-  background: #333333;
+  background: #42545e;
   color: #FFF;
   height: 50px;
 }
@@ -47,7 +52,7 @@ nav a:hover {
 }
 
 nav li {
-  border-top: 1px solid #4f4f4f;
+  border-top: 1px solid #FFF;
 }
 
 .search-btn {
@@ -77,15 +82,27 @@ nav li {
 
 .current {
   text-decoration: underline;
-  background-color: #1a1a1a;
+  background-color: #151c1f;
 }
 
 .current:before {
   content: '\2013';
 }
 
-.js-expandable-active {
-  /*border-left: 5px solid blue;*/
+.benefits.js-expandable-active {
+  border-left: 5px solid #36e2be;
+}
+
+.active.js-expandable-active {
+  border-left: 5px solid #cb96ee;
+}
+
+.carer.js-expandable-active {
+  border-left: 5px solid #fd6e6e;
+}
+
+.your-health.js-expandable-active {
+  border-left: 5px solid #ffac79;
 }
 
 .collapsed {
@@ -93,7 +110,7 @@ nav li {
 }
 
 .dropdown {
-  background-color: #262626;
+  background-color: #232b2e;
 }
 
 .toggle-topbar {
@@ -167,7 +184,7 @@ nav li {
 }
 
 .navbar-collapsible {
-  background: #333;
+  background: #2f3e46;
   width: 100%;
   position: absolute;
   margin-top: 15px;
@@ -204,11 +221,81 @@ span.touch-btn.active {
 .search-container {
   position: absolute;
   top: 2%;
-  background: grey;
+  background: #7e8083;
   width: 100%;
-  height: 40px;
-  padding-top: 17px;
+  height: 55px;
+  padding: 7px 0;
   text-align: center;
+  color: #000;
+}
+
+.advanced-search-container {
+  position: absolute;
+  top: 2%;
+  background: #7e8083;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.advanced-search-container .no-margin {
+  margin-right: 210px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+select {
+   width: 275px;
+   padding: 5px;
+   font-size: 18px;
+   line-height: 25px;
+   text-indent: 7px;
+   border: 0;
+   border-radius: 8px;
+   height: 34px;
+   -webkit-appearance: none;
+   color: #9C9C9C;
+   margin: 10px 0;
+   background: url(../img/arrow.png) no-repeat right #FFF;
+}
+
+.typeahead, input {
+  width: 250px;
+  height: 15px;
+  padding: 8px 12px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid transparent;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  outline: none;
+  color: #000;
+}
+
+.btn {
+  background: #42545e;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 17px;
+  line-height: 1.471;
+  border-radius: 6px;
+  -webkit-transition: border .25s linear,color .25s linear,background-color .25s linear;
+  transition: border .25s linear,color .25s linear,background-color .25s linear;
+  -webkit-font-smoothing: subpixel-antialiased;
+  border: none;
+}
+
+.btn:hover {
+  background: #4a5c65;
+}
+
+input:focus,
+input:active {
+  border: 2px solid #0097cf;
 }
 
 .nojs .navbar-collapsible {

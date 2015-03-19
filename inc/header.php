@@ -22,7 +22,7 @@
           <ul class="nav navbar-nav">
       		    <li class="active"><a href="index.php">Home</a></li>
               <li><a href="#">Worried about your memory?</a></li>
-              <li>
+              <li class="benefits">
                 <a href="#" class="has-dropdown">
                   Benefits and Legal
                 </a>
@@ -32,7 +32,7 @@
                   <li><a href="#">Local Council</a></li>
                 </ul>
               </li>
-              <li>
+              <li class="active">
                 <a href="#" class="has-dropdown">
                   Staying Active
                 </a>
@@ -44,7 +44,7 @@
                   <li><a href="#">In the Home</a></li>
                 </ul>
               </li>
-              <li>
+              <li class="carer">
                 <a href="#" class="has-dropdown">
                   Carer Health
                 </a>
@@ -53,7 +53,7 @@
                   <li><a href="#">Carer Training</a></li>
                 </ul>
               </li>
-              <li>
+              <li class="your-health">
                 <a href="#" class="has-dropdown">
                   Your Health
                 </a>
@@ -67,10 +67,28 @@
       		</ul>
         </nav>
 
-        <div class="search-container collapsed">
-          <form class="nav-search" id="search-bar" aria-expanded="true">
-            <input type="search" class="nav-search-field" id="nav-search" name="nav-search" placeholder="Search everything">
-            <button type="submit"></button>
-          </form>
+        <div class="search-container collapsed" id="the-basics">
+          <input class="typeahead" type="search" placeholder="Search everything">
+          <button class="btn">Search</button>
+          <p class="no-margin"><a href="#" id="advanced">Advanced Search</a></p>
+        </div>
+
+        <div class="advanced-search-container collapsed">
+          <input type="search" placeholder="Search term">
+          <select>
+            <option selected disabled value="">Topic</option>
+            <option value="benefits">Benefits</option>
+          </select>
+          <p class="no-margin">Optional</p>
+          <select>
+            <option selected disabled value="">Group Type</option>
+          </select>
+          <input type="text" placeholder="Post Code">
+          <p>Or</p>
+          <select>
+            <option selected disabled value="">Location</option>
+            <option value="bristol">Bristol</option>
+            <option value="south gloucestershire">South Gloucestershire</option>
+          </select>
         </div>
     </header>

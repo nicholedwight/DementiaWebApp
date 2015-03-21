@@ -189,6 +189,7 @@ nav li {
   width: 100%;
   position: absolute;
   margin-top: 15px;
+  z-index: 100;
 }
 
 span.touch-btn {
@@ -361,14 +362,21 @@ input:active {
   margin: -4px auto;
 }
 
+.category p {
+  text-align: left;
+  word-wrap: break-word;
+}
+
 .wrapper {
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.category p {
-  text-align: left;
-  word-wrap: break-word;
+#map-canvas {
+  height: 250px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 0;
 }
 
 .footer-nav {

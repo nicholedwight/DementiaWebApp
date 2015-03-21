@@ -8,9 +8,11 @@
     </div>
 
     <div class="wrapper" id="content">
-      <p class="heading">Search Results for <strong><?= $searchTerm;?></strong></p>
+      <p class="heading">Search Results for
+        <strong><?= $searchTerm;?></strong>
+      </p>
+      <p>Sort results by:</p>
     </div>
-
 
 
   </div>

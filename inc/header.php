@@ -84,17 +84,15 @@
             <option selected disabled value="">Topic</option>
             <option value="benefits">Benefits</option>
           </select>
+          
           <p class="no-margin">Optional</p>
+
+          <form method="get" action="map.php">
           <select>
             <option selected disabled value="">Group Type</option>
           </select>
-          <input type="text" placeholder="Post Code">
-          <p>Or</p>
-          <select>
-            <option selected disabled value="">Location</option>
-            <option value="bristol">Bristol</option>
-            <option value="south gloucestershire">South Gloucestershire</option>
-          </select>
-          <input type="submit" class="btn" value="Submit">
+            <input type="text" placeholder="Post Code" name="location" id="location">
+            <input type="submit" class="btn" value="Submit">
+          </form>
         </div>
     </header>

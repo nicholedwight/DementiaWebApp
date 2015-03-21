@@ -14,13 +14,14 @@ body, html {
   overflow-x: hidden;
   padding: 0;
   position: relative;
+  background: url('../img/body-bkg.gif');
 }
 
-@media (min-width: 500px) {
+/*@media (min-width: 500px) {
   body, html {
     max-width: 480px;
   }
-}
+}*/
 
 a {
   color: inherit;
@@ -234,7 +235,7 @@ span.touch-btn.active {
   top: 2%;
   background: #7e8083;
   width: 100%;
-  height: 300px;
+  height: 350px;
   text-align: center;
   padding: 15px 0;
 }
@@ -276,6 +277,25 @@ select {
   color: #000;
 }
 
+.tt-dropdown-menu {
+  width: 320px;
+  max-height: 200px;
+  overflow-y: scroll;
+  margin: 12px;
+  text-align: left;
+  text-indent: 10px;
+  padding: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
 .btn {
   background: #42545e;
   color: #fff;
@@ -287,6 +307,7 @@ select {
   transition: border .25s linear,color .25s linear,background-color .25s linear;
   -webkit-font-smoothing: subpixel-antialiased;
   border: none;
+  height: 33px;
 }
 
 .btn:hover {
@@ -306,13 +327,9 @@ input:active {
   margin-top: 150px;
 }
 
-hr {
-  border-color: #444444;
-  margin: 5px 0 10px 0 !important;
-  border-width: 1px 0 0;
-  clear: both;
-  height: 0;
-  -webkit-backface-visibility: hidden;
+.banner {
+  height: 200px;
+  overflow: hidden;
 }
 
 .category-wrapper {
@@ -331,15 +348,21 @@ hr {
 
 .category {
   max-width: 300px;
+  cursor: pointer;
 }
 
 .category h4 {
-  background: #333;
+  background: #42545e;
   color: #FFF;
   height: 60px;
   line-height: 60px;
   width: 300px;
   padding-top: 5px;
+  margin: -4px auto;
+}
+
+.wrapper {
+  padding: 0 15px;
   margin: 0 auto;
 }
 

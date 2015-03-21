@@ -1,9 +1,10 @@
 <!doctype html>
+<?php session_start();?>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dementia Web</title>
+    <title>Dementia App</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/vendor/modernizr.js"></script>
@@ -15,7 +16,7 @@
             <span></span>
             Menu
           </a>
-          <a class="navbar-brand" href="index.php">DementiaWeb</a>
+          <a class="navbar-brand" href="index.php">DementiaApp</a>
           <a href="#" class="search-btn"><span></span>Search</a>
         </div>
         <nav class="navbar-collapsible collapsed">
@@ -68,8 +69,12 @@
         </nav>
 
         <div class="search-container collapsed" id="the-basics">
-          <input class="typeahead" type="search" placeholder="Search everything">
-          <button class="btn">Search</button>
+          <form method="get" action="general-search.php">
+            <input class="typeahead" type="search" placeholder="Search everything" name="searchTerm">
+            <!-- Setting the general search value so it can be pulled on search results page-->
+            <?php $searchTerm = $_POST['searchTerm']; ?>
+            <button class="btn">Search</button>
+          </form>
           <p class="no-margin"><a href="#" id="advanced">Advanced Search</a></p>
         </div>
 
@@ -90,5 +95,6 @@
             <option value="bristol">Bristol</option>
             <option value="south gloucestershire">South Gloucestershire</option>
           </select>
+          <input type="submit" class="btn" value="Submit">
         </div>
     </header>

@@ -75,7 +75,7 @@
             <?php $searchTerm = $_POST['searchTerm']; ?>
             <button class="btn">Search</button>
           </form>
-          <p class="no-margin"><a href="#" id="advanced">Advanced Search</a></p>
+          <p class="no-margin"><a href="#" id="advanced">Advanced Search &#8594;</a></p>
         </div>
 
         <div class="advanced-search-container collapsed">

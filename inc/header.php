@@ -83,16 +83,30 @@
           <select>
             <option selected disabled value="">Topic</option>
             <option value="benefits">Benefits</option>
+            <option value="attorney">Power of Attorney</option>
+            <option value="council">Local Council</option>
+            <option value="staying active">Staying Active</option>
+            <option value="forumn">Group Forumn</option>
+            <option value="support groups">Support Groups</option>
+            <option value="carer groups">Carer's Support Groups</option>
+            <option value="training">Carer Training</option>
+            <option value="physicians">Specialist Physicians</option>
           </select>
-          
-          <p class="no-margin">Optional</p>
+
+          <p class="no-margin">Find groups near you</p>
 
           <form method="get" action="map.php">
-          <select>
-            <option selected disabled value="">Group Type</option>
-          </select>
+            <select>
+              <option selected disabled value="">Group Type</option>
+              <option value="support groups">Support Groups</option>
+              <option value="carer groups">Carer's Support Groups</option>
+              <option value="sports">Sports</option>
+              <option value="crafts">Crafts</option>
+              <option value="libraries">Libraries</option>
+              <option value="organisations">Organisations</option>
+            </select>
             <input type="text" placeholder="Post Code" name="location" id="location">
-            <input type="submit" class="btn" value="Submit">
+            <input type="submit" class="btn search" value="Submit">
           </form>
         </div>
     </header>

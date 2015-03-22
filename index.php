@@ -18,7 +18,7 @@
 
       <div class="category">
         <a href="#">
-          <img src="http://placekitten.com/g/300/200">
+          <img src="./img/legal.jpg">
           <h4>Benefits and Legal</h4>
           <p>
             Lorem ipsum dolor sit amet, vis decore graeci ea, eos malis molestie temporibus ei. Doctus utroque ex nam, an eius nostrum persecuti vix

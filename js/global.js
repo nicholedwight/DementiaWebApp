@@ -27,9 +27,10 @@ $(document).ready(function () {
             }
 			  });
 
-        $("#advanced").on("click", function () {
+        $(".advanced").on("click", function () {
 				    $(".advanced-search-container").toggleClass("collapsed");
             $(".search-container").toggleClass("collapsed");
+            $(".search-btn").addClass("active");
 			  });
 
         $(".opt-btn").on("click", function() {

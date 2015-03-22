@@ -70,46 +70,47 @@
 
         <div class="search-container collapsed" id="the-basics">
           <form method="get" action="general-search.php">
-            <input class="typeahead" type="search" placeholder="Search everything" name="searchTerm">
-            <!-- Setting the general search value so it can be pulled on search results page-->
-            <?php $searchTerm = $_POST['searchTerm']; ?>
+            <input class="typeahead" type="search" placeholder="Search everything" name="searchTerm" required>
             <button class="btn">Search</button>
           </form>
-          <p class="advanced-search-toggle"><a href="#" id="advanced">Advanced Search &#8594;</a></p>
+          <p class="advanced-search-toggle advanced"><a href="#" id="advanced">Advanced Search &#8594;</a></p>
         </div>
 
         <div class="advanced-search-container collapsed">
           <p class="no-margin">Search a category</p>
           <form method="get" action="topic-search.php">
-            <select>
+            <select name="topic" required>
               <option selected disabled value="">Topic</option>
-              <option value="benefits">Benefits</option>
-              <option value="attorney">Power of Attorney</option>
-              <option value="council">Local Council</option>
-              <option value="staying active">Staying Active</option>
-              <option value="forumn">Group Forumn</option>
-              <option value="support groups">Support Groups</option>
-              <option value="carer groups">Carer's Support Groups</option>
-              <option value="training">Carer Training</option>
-              <option value="physicians">Specialist Physicians</option>
+              <option value="Benefits">Benefits</option>
+              <option value="Power of Attorney">Power of Attorney</option>
+              <option value="Local Council">Local Council</option>
+              <option value="Staying Active">Staying Active</option>
+              <option value="Group Forumn">Group Forumn</option>
+              <option value="Support Groups">Support Groups</option>
+              <option value="Carer's Support Groups">Carer's Support Groups</option>
+              <option value="Carer Training">Carer Training</option>
+              <option value="Specialist Physicians">Specialist Physicians</option>
             </select>
-            <input type="search" placeholder="Search term">
+            <input type="search" placeholder="Search term" name="searchTerm" required>
+            <input type="submit" class="btn search" value="Search">
           </form>
 
+          <p>Or</p>
           <p class="no-margin">Find groups near you</p>
 
           <form method="get" action="map.php">
-            <select>
+            <select name="group" required>
               <option selected disabled value="">Group Type</option>
-              <option value="support groups">Support Groups</option>
-              <option value="carer groups">Carer's Support Groups</option>
-              <option value="sports">Sports</option>
-              <option value="crafts">Crafts</option>
-              <option value="libraries">Libraries</option>
-              <option value="organisations">Organisations</option>
+              <option value="Groups">All Groups</option>
+              <option value="Support Groups">Support Groups</option>
+              <option value="Carer's Support Groups">Carer's Support Groups</option>
+              <option value="Sports Groups">Sports</option>
+              <option value="Crafts Groups">Crafts</option>
+              <option value="Libraries">Libraries</option>
+              <option value="Organisations">Organisations</option>
             </select>
-            <input type="text" placeholder="Post Code" name="location" id="location">
+            <input type="text" placeholder="Post Code" name="location" id="location" required>
+            <input type="submit" class="btn search" value="Search">
           </form>
-          <input type="submit" class="btn search" value="Submit">
         </div>
     </header>

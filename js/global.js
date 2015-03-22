@@ -6,6 +6,7 @@ $(document).ready(function () {
             $(".search-container").addClass("collapsed");
             $("#nav-toggle").toggleClass("active");
             $(".advanced-search-container").addClass("collapsed");
+            $(".search-btn").removeClass("active");
 			  });
         $(".has-dropdown").on("click", function () {
             $(this).parent().toggleClass("js-expandable-active");
@@ -18,7 +19,14 @@ $(document).ready(function () {
             $(".navbar-collapsible").addClass("collapsed");
             $("#nav-toggle").removeClass("active");
             $(".advanced-search-container").addClass("collapsed");
+            if (!$(".search-btn").hasClass("active")) {
+              $(".search-btn").addClass("active");
+            }
+            if ($(".search-btn").hasClass("active") && $(".advanced-search-container").hasClass("collapsed") && $(".search-container").hasClass("collapsed")) {
+                $(".search-btn").removeClass("active");
+            }
 			  });
+
         $("#advanced").on("click", function () {
 				    $(".advanced-search-container").toggleClass("collapsed");
             $(".search-container").toggleClass("collapsed");

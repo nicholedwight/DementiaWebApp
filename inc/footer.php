@@ -1,7 +1,7 @@
     <footer>
       <hr>
       <ul class="footer-nav">
-        <li><a href="#">Contact</a></li>  &#149;
+        <li><a href="./contact.php">Contact</a></li>  &#149;
         <li><a href="#">Helpline</a></li>  &#149;
         <li><a href="./informationprescription.pdf" target="_blank">PDF Information Prescription</a></li>
       </ul>

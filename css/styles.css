@@ -288,7 +288,7 @@ select {
    background: url(../img/arrow.png) no-repeat right #FFF;
 }
 
-.typeahead, input {
+.typeahead, input, textarea {
   width: 240px;
   height: 15px;
   padding: 8px 12px;
@@ -300,6 +300,10 @@ select {
   border-radius: 8px;
   outline: none;
   color: #000;
+}
+
+textarea {
+  height: 80px;
 }
 
 .tt-hint {
@@ -455,7 +459,8 @@ form {
 .breadcrumb a,
 .footer-nav a,
 .results-wrapper a,
-.heading a {
+.heading a,
+.contact-number {
   color: #009688;
 }
 
@@ -485,7 +490,8 @@ form {
   text-decoration: underline;
 }
 
-.search-result span:before {
+.search-result span:before,
+.wrapper span:before {
   font-family: 'fontello';
   font-style: normal;
   font-variant: normal;
@@ -541,6 +547,47 @@ form {
   margin-right: 20px;
   margin-bottom: 20px;
   color: #009688;
+}
+
+input[placeholder]::-webkit-input-placeholder,
+textarea[placeholder]::-webkit-input-placeholder {
+  -webkit-transition: text-indent 0.5s 0.1s ease;
+  transition: text-indent 0.5s 0.1s ease;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder{
+  text-indent: 75%;
+  /*This is just a progressive enhancement addition, it's cute and quirky but Firefox doesn't allow the placeholder to be styled in this manner, I could change the colour and such, but not the positioning/padding/text-indent of it, so this will only work in Chrome and Safari*/
+}
+
+.contact-form input,
+.contact-form label,
+.contact-form textarea {
+  float: left;
+  clear: both;
+}
+
+.contact-form label {
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 10px auto;
+  width: 92%;
+  max-width: 350px;
+}
+
+.contact-form .btn {
+  margin: 0 auto;
+  float: none;
+  display: block;
+  width: 100%;
+}
+
+.response-page {
+  min-height: 350px;
 }
 
 .footer-advanced a {

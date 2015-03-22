@@ -8,6 +8,20 @@ $(document).ready(function () {
             $(".advanced-search-container").addClass("collapsed");
             $(".search-btn").removeClass("active");
 			  });
+        $(document).on('click', function(event) {
+          if (!$(event.target).closest('.navbar-collapsible').length &&
+              !$(event.target).closest('.navbar-toggle').length &&
+              !$(event.target).closest('.search-btn').length &&
+              !$(event.target).closest('.search-container').length &&
+              !$(event.target).closest('.advanced-search-container').length) {
+                $(".navbar-collapsible").addClass("collapsed");
+                $("#nav-toggle").removeClass("active");
+                $(".search-container").addClass("collapsed");
+                $(".advanced-search-container").addClass("collapsed");
+                $(".search-btn").removeClass("active");
+          }
+        });
+
         $(".has-dropdown").on("click", function () {
             $(this).parent().toggleClass("js-expandable-active");
             $(this).toggleClass("current");

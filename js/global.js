@@ -13,7 +13,8 @@ $(document).ready(function () {
               !$(event.target).closest('.navbar-toggle').length &&
               !$(event.target).closest('.search-btn').length &&
               !$(event.target).closest('.search-container').length &&
-              !$(event.target).closest('.advanced-search-container').length) {
+              !$(event.target).closest('.advanced-search-container').length &&
+              !$(event.target).closest('.advanced').length) {
                 $(".navbar-collapsible").addClass("collapsed");
                 $("#nav-toggle").removeClass("active");
                 $(".search-container").addClass("collapsed");

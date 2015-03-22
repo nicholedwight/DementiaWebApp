@@ -58,7 +58,7 @@
     </div>
 
     <form method="get" class="home-search" action="general-search.php">
-      <input type="text" name="s" class="emptyfocus" placeholder="Search everything" onfocus="if(this.value == 'value') { this.value = ''; }">
+      <input type="text" name="searchTerm" class="emptyfocus" placeholder="Search everything" onfocus="if(this.value == 'value') { this.value = ''; }">
       <button type="submit" class="btn"><span>Search</span></button>
     </form>
     <p class="no-margin footer-advanced">

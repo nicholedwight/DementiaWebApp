@@ -63,7 +63,7 @@
                   <li><a href="#">Specialist Health Physicians</a></li>
                 </ul>
               </li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="contact.php">Contact Us</a></li>
               <li><a href="#">Helpline</a></li>
       		</ul>
         </nav>

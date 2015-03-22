@@ -67,10 +67,21 @@
               <li><a href="#">Helpline</a></li>
       		</ul>
         </nav>
+        <?php
+        // Pulling general search term
+         $searchTerm = $_GET['searchTerm'];
+         $urlTerm = strtolower(str_replace(" ", "", $searchTerm));
+         $topic = $_GET['topic'];
+         $postcode = strtoupper($_GET['location']);
+         $group = $_GET['group'];
+        ?>
 
         <div class="search-container collapsed" id="the-basics">
           <form method="get" action="general-search.php">
-            <input class="typeahead" type="search" placeholder="Search everything" name="searchTerm" required>
+            <input class="typeahead" type="search" placeholder="Search everything" name="searchTerm"
+            value="<?php if($searchTerm){
+              echo $searchTerm;
+            }?>" required>
             <button type="submit" class="btn">Search</button>
           </form>
           <p class="advanced-search-toggle advanced"><a href="#" id="advanced">Advanced Search &#8594;</a></p>
@@ -91,7 +102,9 @@
               <option value="Carer Training">Carer Training</option>
               <option value="Specialist Physicians">Specialist Physicians</option>
             </select>
-            <input type="search" placeholder="Search term" name="searchTerm" required>
+            <input type="search" placeholder="Search term" name="searchTerm" value="<?php if($searchTerm){
+              echo $searchTerm;
+            }?>" required>
             <input type="submit" class="btn search" value="Search">
           </form>
 
@@ -100,8 +113,7 @@
 
           <form method="get" action="map.php">
             <select name="group" required>
-              <option selected disabled value="">Group Type</option>
-              <option value="Groups">All Groups</option>
+              <option selected value="Groups">All Groups</option>
               <option value="Support Groups">Support Groups</option>
               <option value="Carer's Support Groups">Carer's Support Groups</option>
               <option value="Sports Groups">Sports</option>
@@ -109,7 +121,9 @@
               <option value="Libraries">Libraries</option>
               <option value="Organisations">Organisations</option>
             </select>
-            <input type="text" placeholder="Post Code" name="location" id="location" required>
+            <input type="text" placeholder="Post Code" name="location" id="location" value="<?php if($postcode){
+              echo $postcode;
+            }?>" required>
             <input type="submit" class="btn search" value="Search">
           </form>
         </div>

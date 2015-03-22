@@ -1,7 +1,4 @@
-<?php include('inc/header.php');
-  $postcode = strtoupper($_GET['location']);
-  $group = $_GET['group'];
-?>
+<?php include('inc/header.php');?>
   <div class="main" role="main">
     <div class="banner">
       <img src="./img/banner.jpg">

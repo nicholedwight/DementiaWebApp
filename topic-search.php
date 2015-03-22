@@ -1,9 +1,4 @@
-<?php include('inc/header.php');
-// Pulling general search term
- $searchTerm = $_GET['searchTerm'];
- $urlTerm = strtolower(str_replace(" ", "", $searchTerm));
- $topic = $_GET['topic'];
-?>
+<?php include('inc/header.php');?>
  <div class="main" role="main">
    <div class="banner">
      <img src="./img/banner.jpg">

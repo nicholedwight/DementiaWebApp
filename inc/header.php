@@ -71,7 +71,7 @@
         <div class="search-container collapsed" id="the-basics">
           <form method="get" action="general-search.php">
             <input class="typeahead" type="search" placeholder="Search everything" name="searchTerm" required>
-            <button class="btn">Search</button>
+            <button type="submit" class="btn">Search</button>
           </form>
           <p class="advanced-search-toggle advanced"><a href="#" id="advanced">Advanced Search &#8594;</a></p>
         </div>

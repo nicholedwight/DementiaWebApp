@@ -32,6 +32,11 @@ $(document).ready(function () {
             $(".search-container").toggleClass("collapsed");
 			  });
 
+        $(".opt-btn").on("click", function() {
+          $(".opt-btn").removeClass("current-btn");
+          $(this).toggleClass("current-btn");
+        });
+
         var substringMatcher = function(strs) {
   return function findMatches(q, cb) {
     var matches, substrRegex;

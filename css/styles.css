@@ -274,7 +274,7 @@ span.touch-btn.active {
 }
 
 select {
-   width: 275px;
+   width: 268px;
    padding: 5px;
    font-size: 18px;
    line-height: 25px;
@@ -302,6 +302,10 @@ select {
   color: #000;
 }
 
+.tt-hint {
+  color: #888;
+}
+
 .tt-dropdown-menu {
   width: 320px;
   max-height: 200px;
@@ -324,7 +328,7 @@ select {
 }
 
 .search {
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .btn {
@@ -345,9 +349,47 @@ select {
   background: #4a5c65;
 }
 
+.sort-by-options {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sort-by-options p {
+  text-align: left;
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.opt-btn {
+  padding: 5px 10px;
+  background: #42545e;
+  color: #FFF;
+  border: 3px solid #42545e;
+  cursor: pointer;
+}
+
+.current-btn {
+  color: #000;
+  background: #FFF;
+  border: 3px solid #42545e;
+}
+
+.show-all {
+  padding: 10px 40px;
+  background: #42545e;
+  color: #FFF;
+  border: none;
+  display: block;
+  margin: 20px auto;
+}
+
 input:focus,
 input:active {
   border: 2px solid #0097cf;
+}
+
+form {
+  margin-bottom: 10px;
 }
 
 .nojs .navbar-collapsible {
@@ -400,6 +442,23 @@ input:active {
 .wrapper {
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.results-wrapper {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.results-wrapper a {
+  color: #0000EE;
+}
+
+.results-wrapper p {
+  margin: 7px 0;
+}
+
+.heading {
+  font-size: 20px;
 }
 
 #map-canvas {

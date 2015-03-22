@@ -75,23 +75,26 @@
             <?php $searchTerm = $_POST['searchTerm']; ?>
             <button class="btn">Search</button>
           </form>
-          <p class="no-margin"><a href="#" id="advanced">Advanced Search &#8594;</a></p>
+          <p class="advanced-search-toggle"><a href="#" id="advanced">Advanced Search &#8594;</a></p>
         </div>
 
         <div class="advanced-search-container collapsed">
-          <input type="search" placeholder="Search term">
-          <select>
-            <option selected disabled value="">Topic</option>
-            <option value="benefits">Benefits</option>
-            <option value="attorney">Power of Attorney</option>
-            <option value="council">Local Council</option>
-            <option value="staying active">Staying Active</option>
-            <option value="forumn">Group Forumn</option>
-            <option value="support groups">Support Groups</option>
-            <option value="carer groups">Carer's Support Groups</option>
-            <option value="training">Carer Training</option>
-            <option value="physicians">Specialist Physicians</option>
-          </select>
+          <p class="no-margin">Search a category</p>
+          <form method="get" action="topic-search.php">
+            <select>
+              <option selected disabled value="">Topic</option>
+              <option value="benefits">Benefits</option>
+              <option value="attorney">Power of Attorney</option>
+              <option value="council">Local Council</option>
+              <option value="staying active">Staying Active</option>
+              <option value="forumn">Group Forumn</option>
+              <option value="support groups">Support Groups</option>
+              <option value="carer groups">Carer's Support Groups</option>
+              <option value="training">Carer Training</option>
+              <option value="physicians">Specialist Physicians</option>
+            </select>
+            <input type="search" placeholder="Search term">
+          </form>
 
           <p class="no-margin">Find groups near you</p>
 
@@ -106,7 +109,7 @@
               <option value="organisations">Organisations</option>
             </select>
             <input type="text" placeholder="Post Code" name="location" id="location">
-            <input type="submit" class="btn search" value="Submit">
           </form>
+          <input type="submit" class="btn search" value="Submit">
         </div>
     </header>

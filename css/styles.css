@@ -390,6 +390,14 @@ textarea {
   background: #4a5c65;
 }
 
+.intro {
+  margin-top: 20px;
+}
+
+.intro h1 {
+  margin: 0;
+}
+
 .sort-by-options {
   margin: 0 auto;
   text-align: center;
@@ -633,6 +641,11 @@ textarea:focus::-webkit-input-placeholder{
 
 .response-page {
   min-height: 350px;
+}
+
+.left {
+  text-align: left;
+  padding: 0 5px;
 }
 
 .footer-advanced a {

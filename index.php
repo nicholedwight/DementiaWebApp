@@ -5,7 +5,14 @@
     </div>
 
     <div class="category-wrapper" id="content">
-      <h1>Categories</h1>
+      <div class="intro">
+        <h1>About DementiaApp</h1>
+        <hr>
+        <p class="left">
+          We provide high quality information and resources about dementia and what you might encounter on your journey. We also assist you in finding local information about services, support groups, and primary care staff to help you and your family. We want to more effectively help support people living with dementia and other cognitive impairments, their families, and carers.
+        </p>
+      </div>
+      <h2>Find what you're looking for</h2>
       <div class="category">
         <a href="#">
           <img src="./img/memory.jpg">

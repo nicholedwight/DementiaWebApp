@@ -688,3 +688,28 @@ footer {
   display: inline;
   width: 300px;
 }
+
+.construction {
+  min-height: 450px;
+  padding-top: 90px;
+}
+
+.construction h1 {
+  font-size:27pt;
+  color: #33333C;
+  font-weight: lighter;
+  font-family: helvetica;
+  text-align: center;
+}
+
+.construction p {
+  color: #33333C;
+  font-weight: lighter;
+  font-family: helvetica;
+  text-align: center;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}

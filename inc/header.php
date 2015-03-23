@@ -21,15 +21,15 @@
         <nav class="navbar-collapsible collapsed">
           <ul class="nav navbar-nav">
       		    <li class="active"><a href="index.php">Home</a></li>
-              <li><a href="#">Worried about your memory?</a></li>
+              <li><a href="404.php">Worried about your memory?</a></li>
               <li class="benefits">
                 <a href="#" class="has-dropdown">
                   Benefits and Legal
                 </a>
                 <ul class="dropdown collapsed">
-                  <li><a href="#">Benefits</a></li>
-                  <li><a href="#">Power of Attorney</a></li>
-                  <li><a href="#">Local Council</a></li>
+                  <li><a href="404.php">Benefits</a></li>
+                  <li><a href="404.php">Power of Attorney</a></li>
+                  <li><a href="404.php">Local Council</a></li>
                 </ul>
               </li>
               <li class="active">
@@ -37,11 +37,11 @@
                   Staying Active
                 </a>
                 <ul class="dropdown collapsed">
-                  <li><a href="#">Group Forum</a></li>
-                  <li><a href="#">Support Groups</a></li>
-                  <li><a href="#">Activities</a></li>
-                  <li><a href="#">Organisations</a></li>
-                  <li><a href="#">In the Home</a></li>
+                  <li><a href="404.php">Group Forum</a></li>
+                  <li><a href="404.php">Support Groups</a></li>
+                  <li><a href="404.php">Activities</a></li>
+                  <li><a href="404.php">Organisations</a></li>
+                  <li><a href="404.php">In the Home</a></li>
                 </ul>
               </li>
               <li class="carer">
@@ -49,8 +49,8 @@
                   Carer Health
                 </a>
                 <ul class="dropdown collapsed">
-                  <li><a href="#">Carer's Support Groups</a></li>
-                  <li><a href="#">Carer Training</a></li>
+                  <li><a href="404.php">Carer's Support Groups</a></li>
+                  <li><a href="404.php">Carer Training</a></li>
                 </ul>
               </li>
               <li class="your-health">
@@ -58,12 +58,12 @@
                   Your Health
                 </a>
                 <ul class="dropdown collapsed">
-                  <li><a href="#">What to Expect</a></li>
-                  <li><a href="#">Specialist Health Physicians</a></li>
+                  <li><a href="404.php">What to Expect</a></li>
+                  <li><a href="404.php">Specialist Health Physicians</a></li>
                 </ul>
               </li>
               <li><a href="contact.php">Contact Us</a></li>
-              <li><a href="#">Helpline</a></li>
+              <li><a href="404.php">Helpline</a></li>
       		</ul>
         </nav>
         <?php

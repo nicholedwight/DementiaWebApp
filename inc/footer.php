@@ -7,6 +7,7 @@
       </ul>
     </footer>
     <script src="js/vendor/jquery.js"></script>
+    <script src='js/fastclick.js'></script>
     <script src="js/global.js"></script>
     <script src="js/typeahead.jquery.js"></script>
   </body>

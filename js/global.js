@@ -1,6 +1,11 @@
- $('body').removeClass('nojs').addClass('js'); //*Enables .js * CSS classes when JavaScript is disabled
+
+window.addEventListener('load', function() {
+    new FastClick(document.body);
+}, false);
 
 $(document).ready(function () {
+        $('body').removeClass('nojs').addClass('js'); //*Enables .js * CSS classes when JavaScript is disabled
+
 			  $(".navbar-toggle").on("click", function () {
 				    $(".navbar-collapsible").toggleClass("collapsed");
             $(".search-container").addClass("collapsed");

@@ -49,16 +49,13 @@ $sendto="$YourEmail";
 $headers= "MIME-Version: 1.0\r\n";
 $headers= "Content-type: text/html; ";
 $headers= "charset=iso-8859-1\r\n";
-$headers= "From: $email";
+$headers= "Name: $name
+            Email: $email
+            Number: $number
+            Message:
+            $message";
 // Build the email body text
-  $emailcontent = "
-
-    Name: $name
-    Email: $email
-    Number: $number
-    Message:
-    $message
-    ";
+  $emailcontent = "From: $email";
 /* and the email is sent  later - after we have started the html page
 so that we can include an appropriate message  within the page */
 

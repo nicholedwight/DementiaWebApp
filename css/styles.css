@@ -381,6 +381,10 @@ textarea {
   font-weight: bold;
 }
 
+.hidden {
+  display: none;
+}
+
 .show-all {
   padding: 10px 40px;
   background: #42545e;

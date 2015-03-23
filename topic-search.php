@@ -53,6 +53,33 @@
          </p>
          <p class="address"><span></span>Lorem House, 10 Ipsum Road, Bristol, BS1 0KP</p>
        </article>
+       <article class="search-result hidden">
+         <hr>
+         <p class="heading">Lorem ipsum dolor sit amet</p>
+         <p class="phone"><span></span>01234 567 8910</p>
+         <p>
+           Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. Eu veniam qualisque vel, mutat affert sententiae ei mei. Assum iisque ut ius, cum ad omnium impedit dissentias. Ea vel suas dicunt, stet mentitum in pri. Ocurreret forensibus cum no, integre volumus pri et.
+         </p>
+         <a href="#" class="email"><span></span>www.<?= $urlTerm;?>.com</a>
+       </article>
+       <article class="search-result hidden">
+         <hr>
+         <p class="heading">Lorem ipsum dolor sit amet</p>
+         <p class="phone"><span></span>01234 567 8910  -  John Smith</p>
+         <p>
+           Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. Eu veniam qualisque vel, mutat affert sententiae ei mei. Assum iisque ut ius, cum ad omnium impedit dissentias. Ea vel suas dicunt, stet mentitum in pri. Ocurreret forensibus cum no, integre volumus pri et.
+         </p>
+       </article>
+       <article class="search-result hidden">
+         <hr>
+         <p class="heading">Lorem ipsum dolor sit amet</p>
+         <p class="phone"><span></span>01234 567 8910</p>
+         <p class="phone"><span></span>01987 654 3210</p>
+         <p>
+           Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. Eu veniam qualisque vel, mutat affert sententiae ei mei. Assum iisque ut ius, cum ad omnium impedit dissentias. Ea vel suas dicunt, stet mentitum in pri. Ocurreret forensibus cum no, integre volumus pri et.
+         </p>
+         <p class="address"><span></span>Lorem House, 10 Ipsum Road, Bristol, BS1 0KP</p>
+       </article>
        <button class="show-all">Show All</button>
      </section>
    </div>

@@ -1,4 +1,3 @@
-
 window.addEventListener('load', function() {
     new FastClick(document.body);
 }, false);
@@ -56,6 +55,10 @@ $(document).ready(function () {
         $(".opt-btn").on("click", function() {
           $(".opt-btn").removeClass("current-btn");
           $(this).toggleClass("current-btn");
+        });
+
+        $(".show-all").on("click", function() {
+          $(".hidden").removeClass("hidden");
         });
 
         var substringMatcher = function(strs) {

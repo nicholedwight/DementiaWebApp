@@ -9,18 +9,42 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'kievit';
+  src: url('../font/kievit.eot');
+  src:  url('../font/kievit.eot') format('embedded-opentype'),
+        url('../font/kievit.woff') format('woff'),
+        url('../font/kievit.tff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kievit-medium';
+  src: url('../font/kievit-medium.ttg');
+  src:  url('../font/kievit-medium.ttg') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, html {
+  font-family: 'kievit', helvetica, sans-serif;
   margin: 0 auto;
   overflow-x: hidden;
   padding: 0;
   position: relative;
   background: url('../img/body-bkg.gif');
+  color: #3f3f3f;
 }
 
 @media (min-width: 500px) {
   body, html {
     max-width: 480px;
   }
+}
+
+strong {
+  font-family: 'kievit-medium';
 }
 
 a {
@@ -490,6 +514,10 @@ form {
 
 .heading {
   font-size: 20px;
+}
+
+.breadcrumb .advanced {
+  text-decoration: none;
 }
 
 .advanced {

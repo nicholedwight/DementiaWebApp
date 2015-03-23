@@ -88,9 +88,10 @@
         </div>
 
         <div class="advanced-search-container collapsed">
-          <p class="no-margin">Search a category</p>
+          <p class="no-margin heading">Search a category</p>
           <form method="get" action="topic-search.php">
-            <select name="topic" required>
+            <label for="topic">Topic:</label>
+            <select name="topic" id="topic" required>
               <option selected disabled value="">Topic</option>
               <option value="Benefits">Benefits</option>
               <option value="Power of Attorney">Power of Attorney</option>
@@ -102,17 +103,20 @@
               <option value="Carer Training">Carer Training</option>
               <option value="Specialist Physicians">Specialist Physicians</option>
             </select>
-            <input type="search" placeholder="Search term" name="searchTerm" value="<?php if($searchTerm){
+            <label for="searchTerm">Search Term:</label>
+            <input type="search" placeholder="Search term" id="searchTerm" name="searchTerm" value="<?php if($searchTerm){
               echo $searchTerm;
             }?>" required>
             <input type="submit" class="btn search" value="Search">
           </form>
 
-          <p>Or</p>
-          <p class="no-margin">Find groups near you</p>
+          <p class="heading">Or</p>
+          
+          <p class="no-margin heading">Find groups near you</p>
 
           <form method="get" action="map.php">
-            <select name="group" required>
+            <label for="group">Group Type:</label>
+            <select name="group" id="group" required>
               <option selected value="Groups">All Groups</option>
               <option value="Support Groups">Support Groups</option>
               <option value="Carer's Support Groups">Carer's Support Groups</option>
@@ -121,6 +125,7 @@
               <option value="Libraries">Libraries</option>
               <option value="Organisations">Organisations</option>
             </select>
+            <label for="location">Post Code:</label>
             <input type="text" placeholder="Post Code" name="location" id="location" value="<?php if($postcode){
               echo $postcode;
             }?>" required>

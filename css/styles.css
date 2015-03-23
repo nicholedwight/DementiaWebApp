@@ -272,6 +272,8 @@ span.touch-btn.active {
 
 .search-container form {
   padding-left: 5px;
+  max-width: 390px;
+  margin: 0 auto;
 }
 
 .search-container button {
@@ -294,15 +296,33 @@ span.touch-btn.active {
   z-index: 100;
   background: #333;
   width: 100%;
-  height: 350px;
+  height: 480px;
   text-align: center;
   padding: 19px 0;
+}
+
+.advanced-search-container form {
+  margin: 0 auto;
+  max-width: 270px;
+}
+
+.advanced-search-container input {
+  margin: 5px 0;
+}
+
+.advanced-search-container label {
+  float: left;
+}
+
+.advanced-search-container p {
+  clear: both;
 }
 
 .advanced-search-container .no-margin {
   margin-left: 55px;
   text-align: left;
   width: 50%;
+  clear: both;
 }
 
 .no-margin {
@@ -320,7 +340,7 @@ select {
    height: 34px;
    -webkit-appearance: none;
    color: #9C9C9C;
-   margin: 10px 0;
+   margin: 5px 0;
    background: url(../img/arrow.png) no-repeat right #FFF;
 }
 

@@ -21,8 +21,8 @@
 
 @font-face {
   font-family: 'kievit-medium';
-  src: url('../font/kievit-medium.ttg');
-  src:  url('../font/kievit-medium.ttg') format('truetype');
+  src: url('../font/kievit-medium.ttf');
+  src:  url('../font/kievit-medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -43,7 +43,7 @@ body, html {
   }
 }
 
-strong {
+strong, .current-btn {
   font-family: 'kievit-medium';
 }
 
@@ -441,7 +441,7 @@ textarea {
 
 .current-btn {
   box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
-  padding: 5px 10px;
+  padding: 5px 10px 6px 10px;
   font-weight: bold;
 }
 

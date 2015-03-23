@@ -1,5 +1,4 @@
 <!doctype html>
-<?php session_start();?>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
@@ -111,7 +110,7 @@
           </form>
 
           <p class="heading">Or</p>
-          
+
           <p class="no-margin heading">Find groups near you</p>
 
           <form method="get" action="map.php">

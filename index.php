@@ -44,8 +44,8 @@
       </div>
 
       <div class="category">
-        <a href="#">
-          <img src="./img/carer.jpg">
+        <a href="404.php">
+          <img src="./img/carer.jpg" alt="carers' Health">
           <h3>Carer Health</h3>
           <p>
             Lorem ipsum dolor sit amet, vis decore graeci ea, eos malis molestie temporibus ei. Doctus utroque ex nam, an eius nostrum persecuti vix

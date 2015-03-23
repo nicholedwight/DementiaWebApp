@@ -98,7 +98,7 @@
               <option value="Staying Active">Staying Active</option>
               <option value="Group Forumn">Group Forumn</option>
               <option value="Support Groups">Support Groups</option>
-              <option value="Carer's Support Groups">Carer's Support Groups</option>
+              <option value="carers' Support Groups">carers' Support Groups</option>
               <option value="Carer Training">Carer Training</option>
               <option value="Specialist Physicians">Specialist Physicians</option>
             </select>
@@ -118,7 +118,7 @@
             <select name="group" id="group" required>
               <option selected value="Groups">All Groups</option>
               <option value="Support Groups">Support Groups</option>
-              <option value="Carer's Support Groups">Carer's Support Groups</option>
+              <option value="carers' Support Groups">carers' Support Groups</option>
               <option value="Sports Groups">Sports</option>
               <option value="Crafts Groups">Crafts</option>
               <option value="Libraries">Libraries</option>

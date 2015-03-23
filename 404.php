@@ -55,7 +55,7 @@
       </g>
       </svg>
         <p>
-          Pleae forgive the inconvience. <br />
+          Please forgive the inconvenience. <br />
           We're currently developing this page.
         </p>
         <p>

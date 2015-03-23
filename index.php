@@ -9,7 +9,7 @@
       <div class="category">
         <a href="#">
           <img src="./img/memory.jpg">
-          <h4>Worried about your memory?</h4>
+          <h3>Worried about your memory?</h3>
           <p>
             Lorem ipsum dolor sit amet, vis decore graeci ea, eos malis molestie temporibus ei. Doctus utroque ex nam, an eius nostrum persecuti vix
           </p>
@@ -19,7 +19,7 @@
       <div class="category">
         <a href="#">
           <img src="./img/legal.jpg">
-          <h4>Benefits and Legal</h4>
+          <h3>Benefits and Legal</h3>
           <p>
             Lorem ipsum dolor sit amet, vis decore graeci ea, eos malis molestie temporibus ei. Doctus utroque ex nam, an eius nostrum persecuti vix
           </p>
@@ -29,7 +29,7 @@
       <div class="category">
         <a href="#">
           <img src="./img/active.jpg">
-          <h4>Staying Active</h4>
+          <h3>Staying Active</h3>
           <p>
             Lorem ipsum dolor sit amet, vis decore graeci ea, eos malis molestie temporibus ei. Doctus utroque ex nam, an eius nostrum persecuti vix
           </p>
@@ -39,7 +39,7 @@
       <div class="category">
         <a href="#">
           <img src="./img/carer.jpg">
-          <h4>Carer Health</h4>
+          <h3>Carer Health</h3>
           <p>
             Lorem ipsum dolor sit amet, vis decore graeci ea, eos malis molestie temporibus ei. Doctus utroque ex nam, an eius nostrum persecuti vix
           </p>
@@ -49,7 +49,7 @@
       <div class="category">
         <a href="#">
           <img src="./img/health.jpg">
-          <h4>Your Health</h4>
+          <h3>Your Health</h3>
           <p>
             Lorem ipsum dolor sit amet, vis decore graeci ea, eos malis molestie temporibus ei. Doctus utroque ex nam, an eius nostrum persecuti vix
           </p>
@@ -57,7 +57,7 @@
       </div>
     </div>
 
-    <form method="get" class="home-search" action="general-search.php">
+    <form method="get" class="home-search flex-inline" action="general-search.php">
       <input type="text" name="searchTerm" class="emptyfocus" placeholder="Search everything" onfocus="if(this.value == 'value') { this.value = ''; }">
       <button type="submit" class="btn"><span>Search</span></button>
     </form>

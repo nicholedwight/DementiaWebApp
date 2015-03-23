@@ -77,7 +77,7 @@
         ?>
 
         <div class="search-container collapsed" id="the-basics">
-          <form method="get" action="general-search.php">
+          <form method="get" action="general-search.php" class="flex-inline">
             <input class="typeahead" type="search" placeholder="Search everything" name="searchTerm"
             value="<?php if($searchTerm){
               echo $searchTerm;

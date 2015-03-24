@@ -27,6 +27,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'apex';
+  src: url('../font/apex.otf');
+  src:  url('../font/apex.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, html {
   font-family: 'kievit', helvetica, sans-serif;
   margin: 0 auto;
@@ -110,6 +118,7 @@ nav li {
 .current {
   text-decoration: underline;
   background-color: #151c1f;
+  color: #f57100;
 }
 
 .current:before {
@@ -212,6 +221,18 @@ nav li {
 
 .navbar-brand {
   margin: 0 auto;
+  font-family: 'apex';
+  font-size: 24px;
+}
+
+.brand-orange {
+  color: #f57100;
+}
+
+.logo-img {
+  width: 110px;
+  margin: 0 auto;
+  display: block;
 }
 
 .navbar-collapsible {
@@ -264,7 +285,7 @@ span.touch-btn.active {
   margin-top: 15px;
   background: #333;
   width: 100%;
-  height: 50px;
+  height: 70px;
   padding: 35px 15px;
   text-align: center;
   color: #000;
@@ -443,6 +464,7 @@ textarea {
   box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
   padding: 5px 10px 6px 10px;
   font-weight: bold;
+  color: #f57100;
 }
 
 .hidden {
@@ -531,8 +553,38 @@ form {
 .results-wrapper a,
 .heading a,
 .construction a,
-.contact-number {
+.contact-number,
+.help a {
   color: #26898A;
+}
+
+.breadcrumb a:focus,
+.footer-nav a:focus,
+.results-wrapper a:focus,
+.heading a:focus,
+.construction a:focus,
+.contact-number:focus,
+.help a:focus,
+.breadcrumb a:hover,
+.footer-nav a:hover,
+.results-wrapper a:hover,
+.heading a:hover,
+.construction a:hover,
+.contact-number:hover,
+.help a:hover,
+.advanced:focus,
+.advanced:hover,
+.advanced-search-toggle a:focus,
+.advanced-search-toggle a:hover {
+  color: #f57100;
+}
+
+.help h3 {
+  margin-bottom: 0;
+}
+
+div.help {
+  padding-bottom: 40px;
 }
 
 .breadcrumb span:before {

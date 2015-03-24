@@ -28,7 +28,7 @@
           <p class="phone"><span></span>01234 567 8910</p>
           <p>Living well with dementia</p>
           <p>
-            Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. Eu veniam qualisque vel, mutat affert sententiae ei mei. Assum iisque ut ius, cum ad omnium impedit dissentias. Ea vel suas dicunt, stet mentitum in pri. Ocurreret forensibus cum no, integre volumus pri et.
+            Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. pri et.
           </p>
         </article>
         <hr>
@@ -38,7 +38,7 @@
           <p class="phone"><span></span>01234 567 8910</p>
           <p class="phone"><span></span>01987 654 3210</p>
           <p>
-            Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. Eu veniam qualisque vel, mutat affert sententiae ei mei. Assum iisque ut ius, cum ad omnium impedit dissentias. Ea vel suas dicunt, stet mentitum in pri. Ocurreret forensibus cum no, integre volumus pri et.
+            Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. Eu veniam qualisque vel...
           </p>
           <p class="address"><span></span>Lorem House, 10 Ipsum Road, Bristol, <?= $postcode;?></p>
         </article>
@@ -48,7 +48,7 @@
           <p class="distance"><span></span>1.2 miles away</p>
           <p class="phone"><span></span>01234 567 8910</p>
           <p>
-            Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. Eu veniam qualisque vel, mutat affert sententiae ei mei. Assum iisque ut ius, cum ad omnium impedit dissentias. Ea vel suas dicunt, stet mentitum in pri. Ocurreret forensibus cum no, integre volumus pri et.
+            Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. Eu veniam qualisque vel, mutat affert sententiae ei mei.
           </p>
           <a href="#" class="email">
             <span></span>www.<?= strtolower(str_replace(" ", "", $group));?>.com
@@ -60,7 +60,7 @@
           <p class="distance"><span></span>0.4 miles away</p>
           <p class="phone"><span></span>01234 567 8910  -  John Smith</p>
           <p>
-            Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. Eu veniam qualisque vel, mutat affert sententiae ei mei. Assum iisque ut ius, cum ad omnium impedit dissentias. Ea vel suas dicunt, stet mentitum in pri. Ocurreret forensibus cum no, integre volumus pri et.
+            Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix...
           </p>
         </article>
         <article class="search-result hidden">
@@ -70,7 +70,7 @@
           <p class="phone"><span></span>01234 567 8910</p>
           <p class="phone"><span></span>01987 654 3210</p>
           <p>
-            Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. Eu veniam qualisque vel, mutat affert sententiae ei mei. Assum iisque ut ius, cum ad omnium impedit dissentias. Ea vel suas dicunt, stet mentitum in pri. Ocurreret forensibus cum no, integre volumus pri et.
+            Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. Eu veniam qualisque vel.
           </p>
           <p class="address"><span></span>Lorem House, 10 Ipsum Road, Bristol, <?= $postcode;?></p>
         </article>

@@ -2,7 +2,7 @@
       <hr>
       <ul class="footer-nav">
         <li><a href="./contact.php">Contact</a> &#149; </li>
-        <li><a href="404.php">Helpline</a> &#149; </li>
+        <li><a href="helpline.php">Helpline</a> &#149; </li>
         <li><a href="./informationprescription.pdf" target="_blank">PDF Information Prescription</a></li>
       </ul>
     </footer>

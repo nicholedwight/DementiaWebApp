@@ -16,13 +16,16 @@
             <span></span>
             Menu
           </a>
-          <a class="navbar-brand" href="index.php">DementiaApp</a>
+          <a class="navbar-brand" href="index.php">
+            Dementia<span class="brand-orange">App</span>
+          </a>
           <a href="#" class="search-btn"><span></span>Search</a>
         </div>
         <nav class="navbar-collapsible collapsed">
           <ul class="nav navbar-nav">
       		    <li class="active"><a href="index.php">Home</a></li>
-              <li><a href="404.php">Worried about your memory?</a></li>
+              <li><a href="helpline.php">Worried about your memory?</a></li>
+              <li><a href="helpline.php">Emergency Helpline</a></li>
               <li class="benefits">
                 <a href="#" class="has-dropdown">
                   Benefits and Legal
@@ -64,7 +67,6 @@
                 </ul>
               </li>
               <li><a href="contact.php">Contact Us</a></li>
-              <li><a href="404.php">Helpline</a></li>
       		</ul>
         </nav>
         <?php
@@ -85,6 +87,7 @@
             <button type="submit" class="btn">Search</button>
           </form>
           <p class="advanced-search-toggle advanced"><a href="#" id="advanced">Advanced Search &#8594;</a></p>
+          <p class="advanced-search-toggle advanced"><a href="#mapSearch" id="advanced">Looking for something near you? &#8594;</a></p>
         </div>
 
         <div class="advanced-search-container collapsed">
@@ -112,7 +115,7 @@
 
           <p class="heading">Or</p>
 
-          <p class="no-margin heading">Find groups near you</p>
+          <p class="no-margin heading" id="mapSearch">Find groups near you</p>
 
           <form method="get" action="map.php">
             <label for="group">Group Type:</label>

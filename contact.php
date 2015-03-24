@@ -5,10 +5,11 @@
     </div>
 
     <div class="wrapper" id="content" tabindex="0">
-      <p class="heading">Contact Us</p>
+      <p class="heading">Contact the Dementia Health Integration Team (HIT)</p>
+      <img src="./img/logo.png" alt="Dementia App Logo" class="logo-img">
       <p>Please fill out the form below to contact us and we will do our best to get in touch with you as soon as possible.</p>
-      <p>Or give us a call at
-        <a href="#" class="phone contact-number"><span></span>01234 567 8901</a>.
+      <p>Or give us a call instead at
+        <a href="tel:0123-456-7890" class="phone contact-number"><span></span>0123-456-7890</a>.
       </p>
       <form action="FormMail.php" method="post" class="contact-form">
         <label for="name">Name:</label>

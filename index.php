@@ -6,7 +6,7 @@
 
     <div class="category-wrapper" id="content" tabindex="0">
       <div class="intro">
-        <h1>About DementiaApp</h1>
+        <h1>About Dementia<span class="brand-orange">App</span></h1>
         <hr>
         <p class="left">
           We provide high quality information and resources about dementia and what you might encounter on your journey. We also assist you in finding local information about services, support groups, and primary care staff to help you and your family. We want to more effectively help support people living with dementia and other cognitive impairments, their families, and carers.

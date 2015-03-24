@@ -1,6 +1,6 @@
 <?php include('inc/header.php');?>
 <div class="main" role="main">
-  <div class="wrapper" id="content">
+  <div class="wrapper" id="content" tabindex="0">
     <div class="construction">
       <h1>Oops! <br />Looks like this page is still under construction!</h1>
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

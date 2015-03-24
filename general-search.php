@@ -10,7 +10,7 @@
       <li>Search Results</li>
     </ul>
 
-    <div class="wrapper" id="content">
+    <div class="wrapper" id="content" tabindex="0">
       <p class="heading">Search Results for
         <strong><?= $searchTerm;?></strong>
       </p>

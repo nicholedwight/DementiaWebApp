@@ -1,10 +1,10 @@
 <?php include('inc/header.php');?>
   <div class="main" role="main">
     <div class="banner">
-      <img src="./img/banner.jpg">
+      <img src="./img/banner.jpg" alt="Banner image of elderly couple">
     </div>
 
-    <div class="category-wrapper" id="content">
+    <div class="category-wrapper" id="content" tabindex="0">
       <div class="intro">
         <h1>About DementiaApp</h1>
         <hr>

@@ -12,7 +12,7 @@
      <li>Search Results</li>
    </ul>
 
-   <div class="wrapper" id="content">
+   <div class="wrapper" id="content" tabindex="0">
      <p class="heading">Search Results for
        <strong><?= $searchTerm;?></strong> in the topic
        <strong><?= $topic;?></strong>. <a href="#" class="advanced">Refine Search.</a>

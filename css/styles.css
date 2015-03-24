@@ -689,6 +689,36 @@ footer {
   width: 300px;
 }
 
+.skiplink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-decoration: underline;
+  background-color: #3b3b3b;
+  display: block;
+  width: 100% !important;
+  text-align: center;
+  line-height: 1.2rem;
+  z-index: 1001;
+  color: #FFF;
+}
+
+.visuallyhidden {
+  border: 0px none;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0px;
+    overflow: visible;
+}
+
 .construction {
   min-height: 450px;
   padding-top: 90px;

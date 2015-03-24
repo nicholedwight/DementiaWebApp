@@ -4,7 +4,7 @@
       <img src="./img/banner.jpg">
     </div>
 
-    <div class="wrapper" id="content">
+    <div class="wrapper" id="content" tabindex="0">
       <p class="heading">Contact Us</p>
       <p>Please fill out the form below to contact us and we will do our best to get in touch with you as soon as possible.</p>
       <p>Or give us a call at

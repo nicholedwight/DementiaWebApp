@@ -12,7 +12,7 @@
       <li>Search Results</li>
     </ul>
 
-    <div class="wrapper" id="content">
+    <div class="wrapper" id="content" tabindex="0">
       <p class="heading">Showing all <strong><?= $group;?></strong> near <strong><?= $postcode;?></strong>. <a href="#" class="advanced">Refine Search.</a></p>
       <input type="hidden" value="<?= $postcode;?>" id="address">
       <div id="map-canvas"></div>

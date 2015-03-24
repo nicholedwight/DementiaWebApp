@@ -34,6 +34,7 @@
         <hr>
         <article class="search-result">
           <p class="heading"><a href="#">Lorem ipsum dolor sit amet</a></p>
+          <p class="distance"><span></span>0.6 miles away</p>
           <p class="phone"><span></span>01234 567 8910</p>
           <p class="phone"><span></span>01987 654 3210</p>
           <p>
@@ -44,6 +45,7 @@
         <article class="search-result hidden">
           <hr>
           <p class="heading"><a href="#">Lorem ipsum dolor sit amet</a></p>
+          <p class="distance"><span></span>1.2 miles away</p>
           <p class="phone"><span></span>01234 567 8910</p>
           <p>
             Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. Eu veniam qualisque vel, mutat affert sententiae ei mei. Assum iisque ut ius, cum ad omnium impedit dissentias. Ea vel suas dicunt, stet mentitum in pri. Ocurreret forensibus cum no, integre volumus pri et.
@@ -55,6 +57,7 @@
         <article class="search-result hidden">
           <hr>
           <p class="heading"><a href="#">Lorem ipsum dolor sit amet</a></p>
+          <p class="distance"><span></span>0.4 miles away</p>
           <p class="phone"><span></span>01234 567 8910  -  John Smith</p>
           <p>
             Lorem ipsum dolor sit amet, cu nonumy consul graeco pri. Cu enim legere mea. His delectus lucilius torquatos ei, ad alia aliquam vix. Eu veniam qualisque vel, mutat affert sententiae ei mei. Assum iisque ut ius, cum ad omnium impedit dissentias. Ea vel suas dicunt, stet mentitum in pri. Ocurreret forensibus cum no, integre volumus pri et.
@@ -63,6 +66,7 @@
         <article class="search-result hidden">
           <hr>
           <p class="heading"><a href="#">Lorem ipsum dolor sit amet</a></p>
+          <p class="distance"><span></span>0.8 miles away</p>
           <p class="phone"><span></span>01234 567 8910</p>
           <p class="phone"><span></span>01987 654 3210</p>
           <p>
@@ -84,11 +88,11 @@
         var latlng = new google.maps.LatLng(51.468489, -2.5907094);
         var mapOptions = {
           center: latlng,
-          zoom: 14
+          zoom: 13
+
         };
         map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
-            // console.log(location);
         codeAddress();
       }
 
@@ -97,10 +101,46 @@
         geocoder.geocode( { 'address': address}, function(results, status) {
           if (status == google.maps.GeocoderStatus.OK) {
             map.setCenter(results[0].geometry.location);
-            var marker = new google.maps.Marker({
-                map: map,
-                position: results[0].geometry.location
-            });
+            // Sets focus and bounds to searched PostCode. Array below adds various markers around the centre.
+            var locations = [
+              ['Your location',
+                JSON.stringify(results[0].geometry.location.k), JSON.stringify(results[0].geometry.location.D)],
+              ['Example Result',
+                JSON.stringify(results[0].geometry.location.k + 0.0045),
+                JSON.stringify(results[0].geometry.location.D + 0.0015)],
+              ['Example Result',
+                JSON.stringify(results[0].geometry.location.k + 0.008),
+                JSON.stringify(results[0].geometry.location.D + 0.005)],
+              ['Example Result',
+                JSON.stringify(results[0].geometry.location.k - 0.0095),
+                JSON.stringify(results[0].geometry.location.D - 0.008)],
+              ['Example Result',
+                JSON.stringify(results[0].geometry.location.k - 0.0095),
+                JSON.stringify(results[0].geometry.location.D)],
+              ['Example Result',
+                JSON.stringify(results[0].geometry.location.k),
+                JSON.stringify(results[0].geometry.location.D + 0.008)],
+              ['Example Result',
+                JSON.stringify(results[0].geometry.location.k + 0.0085),
+                JSON.stringify(results[0].geometry.location.D - 0.018)]
+            ];
+
+            var infowindow = new google.maps.InfoWindow();
+            var marker, i;
+
+            for (i = 0; i < locations.length; i++) {
+              marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                map: map
+              });
+
+              google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                  infowindow.setContent(locations[i][0]);
+                  infowindow.open(map, this);
+                }
+              })(marker, i));
+            }
           } else {
             alert('Location was not found! :(');
           }

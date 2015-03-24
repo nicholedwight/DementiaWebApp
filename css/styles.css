@@ -472,7 +472,7 @@ form {
 }
 
 .nojs .main {
-  margin-top: 150px;
+  margin-top: 440px;
 }
 
 .banner {
@@ -504,7 +504,7 @@ form {
   color: #FFF;
   height: 60px;
   line-height: 60px;
-  width: 300px;
+  max-width: 300px;
   padding-top: 5px;
   margin: -7px auto;
 }
@@ -530,6 +530,7 @@ form {
 .footer-nav a,
 .results-wrapper a,
 .heading a,
+.construction a,
 .contact-number {
   color: #26898A;
 }
@@ -737,6 +738,10 @@ footer {
   font-weight: lighter;
   font-family: helvetica;
   text-align: center;
+}
+
+.construction a {
+  text-decoration: underline;
 }
 
 svg {

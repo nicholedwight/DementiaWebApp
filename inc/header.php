@@ -9,9 +9,10 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body class="nojs">
+    <a href="#content" class="skiplink focusable visuallyhidden">Skip to Content</a><!-- provides accessibility for screen readers/tab-users who don't want to go through the nav over and over-->
     <header>
         <div class="navbar-header">
-          <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" id="nav-toggle">
+          <a href="#" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" id="nav-toggle">
             <span></span>
             Menu
           </a>
@@ -49,7 +50,7 @@
                   Carer Health
                 </a>
                 <ul class="dropdown collapsed">
-                  <li><a href="404.php">Carer's Support Groups</a></li>
+                  <li><a href="404.php">carers' Support Groups</a></li>
                   <li><a href="404.php">Carer Training</a></li>
                 </ul>
               </li>

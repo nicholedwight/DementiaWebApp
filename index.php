@@ -14,8 +14,8 @@
       </div>
       <h2>Find what you're looking for</h2>
       <div class="category">
-        <a href="#">
-          <img src="./img/memory.jpg">
+        <a href="404.php">
+          <img src="./img/memory.jpg" alt="Worried about your memory?">
           <h3>Worried about your memory?</h3>
           <p>
             Lorem ipsum dolor sit amet, vis decore graeci ea, eos malis molestie temporibus ei. Doctus utroque ex nam, an eius nostrum persecuti vix
@@ -24,8 +24,8 @@
       </div>
 
       <div class="category">
-        <a href="#">
-          <img src="./img/legal.jpg">
+        <a href="404.php">
+          <img src="./img/legal.jpg" alt="Benefits and Legal Advice">
           <h3>Benefits and Legal</h3>
           <p>
             Lorem ipsum dolor sit amet, vis decore graeci ea, eos malis molestie temporibus ei. Doctus utroque ex nam, an eius nostrum persecuti vix
@@ -34,8 +34,8 @@
       </div>
 
       <div class="category">
-        <a href="#">
-          <img src="./img/active.jpg">
+        <a href="404.php">
+          <img src="./img/active.jpg" alt="Staying Active">
           <h3>Staying Active</h3>
           <p>
             Lorem ipsum dolor sit amet, vis decore graeci ea, eos malis molestie temporibus ei. Doctus utroque ex nam, an eius nostrum persecuti vix
@@ -54,8 +54,8 @@
       </div>
 
       <div class="category">
-        <a href="#">
-          <img src="./img/health.jpg">
+        <a href="404.php">
+          <img src="./img/health.jpg" alt="Your Health">
           <h3>Your Health</h3>
           <p>
             Lorem ipsum dolor sit amet, vis decore graeci ea, eos malis molestie temporibus ei. Doctus utroque ex nam, an eius nostrum persecuti vix
@@ -64,8 +64,8 @@
       </div>
     </div>
 
-    <form method="get" class="home-search flex-inline" action="general-search.php">
-      <input type="text" name="searchTerm" class="emptyfocus" placeholder="Search everything" onfocus="if(this.value == 'value') { this.value = ''; }">
+    <form method="get" class="home-search flex-inline" action="general-search.php" id="search">
+      <input type="text" name="searchTerm" class="emptyfocus" placeholder="Search everything" onfocus="if(this.value == 'value') { this.value = ''; }" required>
       <button type="submit" class="btn"><span>Search</span></button>
     </form>
     <p class="no-margin footer-advanced">
